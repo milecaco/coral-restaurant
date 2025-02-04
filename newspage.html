@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coral Restaurant - News</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #d49a90; color: #365791; display: flex; flex-direction: column; min-height: 100vh; }
+        header { background: white; padding: 15px 0; text-align: center; position: sticky; top: 0; width: 100%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        header img{ display:block; margin-bottom:-45px;}
+        nav ul { display: flex; justify-content: center; padding: 10px; list-style: none; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { text-decoration: none; color: #69271a; font-size: 18px; padding: 10px; transition: 0.3s; }
+        nav ul li a:hover { background: #dce2e6; border-radius: 5px; }
+        .container { max-width: 1100px; margin: 20px auto; padding: 20px; display: grid; gap: 20px; }
+        .news-item { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transform: translateY(10px); opacity: 0; animation: fadeIn 0.6s forwards; }
+        .news-item:nth-child(2) { animation-delay: 0.2s; }
+        .news-item:nth-child(3) { animation-delay: 0.4s; }
+        .news-item:hover { transform: scale(1.02); transition: 0.3s; }
+        h2 { color: #69271a; margin-bottom: 10px; }
+        p { font-size: 16px; line-height: 1.5; }
+        footer { background: #69271a; color: white; text-align: center; padding: 15px; margin-top: auto; }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+	<center><img src="logo.png" width="160" height ="170"></img></center>
+        <h1>Coral Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="Group5_Peta3_Watson.html">Home</a></li>
+                <li><a href="newspage.html">News</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="orderform.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="news-item">
+            <h2>New Dish: Hokkaido Uni & Wagyu Don</h2>
+            <p>Experience the delicate sweetness of **Hokkaido sea urchin** paired with melt-in-your-mouth **A5 Wagyu** over premium Japanese rice. A true balance of luxury and tradition. **Available now for $85.**</p>
+        </div>
+
+        <div class="news-item">
+            <h2>Valentine’s Kaiseki Experience</h2>
+            <p>Celebrate with a romantic **multi-course Kaiseki dinner** featuring fresh sashimi, seasonal delicacies, and handcrafted desserts. **Reservations open for February 10-14.**</p>
+        </div>
+
+        <div class="news-item">
+            <h2>Extended Weekend Hours</h2>
+            <p>We are now open **until midnight on Fridays and Saturdays!** Enjoy late-night sushi and sake in our serene ambiance.</p>
+        </div>
+    </div>
+
+    <footer><p>© 2025 Coral Restaurant. All Rights Reserved.</p></footer>
+</body>
+</html>

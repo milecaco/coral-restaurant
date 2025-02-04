@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Form</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f4f4f4; 
+            color: #365791; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        header { 
+            background: #ffffff; 
+            padding: 10px 0; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            width: 100%; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+		header img{ display:block; margin-bottom:-45px;}
+
+        nav ul { 
+            list-style: none; 
+            display: flex; 
+            justify-content: center; 
+            padding: 10px; 
+            background: #ffffff; 
+        }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { 
+            text-decoration: none; 
+            color: #69271a; 
+            font-size: 18px; 
+            padding: 10px 16px; 
+            transition: 0.3s; 
+        }
+        nav ul li a:hover { background: #dce2e6; border-radius: 5px; }
+
+        .container { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            flex-wrap: wrap; 
+            padding: 20px; 
+            max-width: 1000px; 
+            width: 100%;
+            margin: 100px auto 20px auto; 
+            gap: 30px; 
+        }
+        .content, .sidebar { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+        .content h2, .sidebar h2 { font-size: 24px; margin-bottom: 10px; color: #69271a; }
+        p { font-size: 17px; line-height: 1.6; color: #333; }
+		#footer{ font-size: 17px; line-height: 1.6; color: white; }
+        img { margin-bottom: 15px; }
+
+        footer { 
+            background: #69271a; 
+            color: white; 
+            text-align: center; 
+            padding: 15px; 
+            margin-top: auto; 
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content, .sidebar {
+                min-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+	   	<center><img src="logo.png" width="160" height ="170"></img></center>
+        <h1>Coral Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="Group5_Peta3_Watson.html">Home</a></li>
+                <li><a href="newspage.html">News</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="orderform.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Contact Us via Email</h2>
+            <img src="mail.png" height="40" width="60">
+            <p><b>Email:</b> milecaco.coralrestaurant@gmail.com</p>
+        </div>
+        <div class="sidebar">
+            <h2>Call Us</h2>
+            <img src="telephone.png" height="40" width="40">
+            <p><b>Contact Number:</b> +63 912 345 6789</p>
+        </div>
+    </div>
+
+    <footer>
+        <p id="footer">© 2025 Coral Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

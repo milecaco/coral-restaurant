@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+   <title>Food Order Form</title>
+    <style>
+	     * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #d49a90; color: #365791; display: flex; flex-direction: column; min-height: 100vh; }
+        header { background: white; padding: 10px 0; text-align: center; position: sticky; top: 0; width: 100%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+		header img{ display:block; margin-bottom:-45px;}
+        nav ul { list-style: none; display: flex; justify-content: center; padding: 10px; background: white; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { text-decoration: none; color: #69271a; font-size: 18px; padding: 10px 16px; transition: 0.3s; }
+        nav ul li a:hover { background: #dce2e6; border-radius: 5px; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;a
+            margin: 0;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            display: block;
+        }
+
+        .checkbox-group {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checkbox-group input {
+            width: 16px;
+            height: 16px;
+            margin: 0;
+        }
+
+        .checkbox-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .checkbox-wrapper label {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+   <header>
+   	<center><img src="logo.png" width="160" height ="170"></img></center>
+
+        <h1>Coral Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="Group5_Peta3_Watson.html">Home</a></li>
+                <li><a href="newspage.html">News</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="orderform.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h2>Food Order Form</h2>
+        <form action="mailto:">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="2" required></textarea>
+
+   <label>Food Selection</label>
+            <div class="checkbox-group">
+                <div class="checkbox-wrapper">
+                    <label><input type="checkbox" name="food" value="sashimi platter"> Sashimi Platter</label>
+                    <label><input type="checkbox" name="food" value="omakase experience"> Omakase Experience</label>
+                    <label><input type="checkbox" name="food" value="wagyu sushi"> Wagyu Sushi</label>
+                    <label><input type="checkbox" name="food" value="hokkaido ramenMB"> Hokkaido Ramen Miso Broth</label>
+                    <label><input type="checkbox" name="food" value="hokkaido ramenPC"> Hokkaido Ramen Pork Chashu</label>
+                    <label><input type="checkbox" name="food" value="hokkaido ramenOE"> Hokkaido Ramen Onsen Egg</label>
+                    <label><input type="checkbox" name="food" value="yuzu cheesecake"> Yuzu Cheesecake</label>
+                </div>
+            </div>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>
